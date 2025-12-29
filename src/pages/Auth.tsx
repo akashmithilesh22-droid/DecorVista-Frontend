@@ -5,6 +5,7 @@ type Mode = "signin" | "signup";
 
 /* ========= VALIDATORS ========= */
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+console.log("BASE_URL =", BASE_URL);
 const isValidGmail = (email: string) =>
   /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email.trim());
 
