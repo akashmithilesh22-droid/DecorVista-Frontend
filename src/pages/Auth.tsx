@@ -4,6 +4,7 @@ import { useSession } from "../context/SessionContext";
 type Mode = "signin" | "signup";
 
 /* ========= VALIDATORS ========= */
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const isValidGmail = (email: string) =>
   /^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(email.trim());
 
@@ -68,10 +69,9 @@ export default function Auth() {
       setLoading(true);
 
       const url =
-        mode === "signup"
-          ? "http://localhost:5000/api/auth/signup"
-          : "http://localhost:5000/api/auth/login";
-
+  mode === "signup"
+    ? `${BASE_URL}/api/auth/signup`
+    : `${BASE_URL}/api/auth/login`;
       const payload =
         mode === "signup"
           ? {

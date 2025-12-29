@@ -15,7 +15,7 @@ export function StepThree({ userInputs, selectedItems, onEdit, onBack }: StepThr
   const { user } = useSession(); // ✅ FIX
   const [selectedComplementary, setSelectedComplementary] = useState<Set<string>>(new Set());
   const [showSuccess, setShowSuccess] = useState(false);
-
+  const BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const GST_RATE = 0.18;
 
   const furnitureSubtotal = selectedItems.reduce(
@@ -46,22 +46,25 @@ export function StepThree({ userInputs, selectedItems, onEdit, onBack }: StepThr
     }
 
     // 1️⃣ UPDATE SESSION (THIS MUST WORK)
-    const updateRes = await fetch(
-      `http://localhost:5000/api/sessions/${user.sessionId}`,
-      {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          roomType: userInputs.roomType,
-          budget: userInputs.budget,
-          selections: selectedItems.map(item => ({
-            name: item.name,
-            price: item.price,
-            quantity: item.quantity,
-          })),
-        }),
-      }
-    );
+    const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+const updateRes = await fetch(
+  `${BASE_URL}/api/sessions/${user.sessionId}`,
+  {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      roomType: userInputs.roomType,
+      budget: userInputs.budget,
+      selections: selectedItems.map(item => ({
+        name: item.name,
+        price: item.price,
+        quantity: item.quantity,
+      })),
+    }),
+  }
+);
+
 
     const updateData = await updateRes.json();
 
@@ -71,9 +74,7 @@ export function StepThree({ userInputs, selectedItems, onEdit, onBack }: StepThr
     }
 
     // 2️⃣ DOWNLOAD PDF
-    const res = await fetch(
-      `http://localhost:5000/api/sessions/${user.sessionId}/pdf`
-    );
+    const res = await fetch(`${BASE_URL}/api/sessions/${user.sessionId}/pdf`);
 
     if (!res.ok) {
       const text = await res.text();
