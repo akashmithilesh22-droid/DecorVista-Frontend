@@ -230,26 +230,31 @@ export function StepOne({ initialInputs, onComplete }: StepOneProps) {
 
           {/* BUDGET */}
           <div className="bg-white p-10 rounded-2xl shadow-xl max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <DollarSign
-                className="w-7 h-7"
-                style={{ color: 'var(--color-primary)' }}
-              />
-              <h3 style={{ color: 'var(--color-primary)' }}>Budget (INR)</h3>
-            </div>
+  <div className="flex items-center justify-center gap-3 mb-4">
+    <DollarSign
+      className="w-7 h-7"
+      style={{ color: 'var(--color-primary)' }}
+    />
+    <h3 style={{ color: 'var(--color-primary)' }}>Budget (INR)</h3>
+  </div>
 
-            <input
-              type="range"
-              min="10000"
-              max="500000"
-              value={inputs.budget}
-              onChange={(e) =>
-                setInputs({ ...inputs, budget: Number(e.target.value) })
-              }
-              className="w-full h-2"
-              style={{ accentColor: 'var(--color-primary)' }}
-            />
-          </div>
+  <p className="text-center text-xl mb-4">
+    ₹{inputs.budget.toLocaleString()}
+  </p>
+
+  <input
+    type="range"
+    min="10000"
+    max="500000"
+    step="5000"
+    value={inputs.budget}
+    onChange={(e) =>
+      setInputs({ ...inputs, budget: Number(e.target.value) })
+    }
+    className="w-full h-2"
+    style={{ accentColor: 'var(--color-primary)' }}
+  />
+</div>
 
           {/* EXTRA FEATURES */}
           <div className="bg-white p-10 rounded-2xl shadow-xl">
