@@ -149,7 +149,7 @@ export function StepOne({ initialInputs, onComplete }: StepOneProps) {
           </div>
 
           {/* DIMENSIONS */}
-          <div className="bg-white p-10 rounded-2xl shadow-xl max-w-4xl mx-auto">
+          <div className="bg-white p-10 rounded-2xl shadow-xl">
             <div className="flex items-center justify-center gap-3 mb-8">
               <Ruler className="w-7 h-7" style={{ color: 'var(--color-primary)' }} />
               <h3 style={{ color: 'var(--color-primary)' }}>
@@ -229,7 +229,7 @@ export function StepOne({ initialInputs, onComplete }: StepOneProps) {
           </div>
 
           {/* BUDGET */}
-          <div className="bg-white p-10 rounded-2xl shadow-xl max-w-4xl mx-auto">
+          <div className="bg-white p-10 rounded-2xl shadow-xl">
   <div className="flex items-center justify-center gap-3 mb-4">
     <DollarSign
       className="w-7 h-7"
