@@ -106,11 +106,17 @@ export default function Auth() {
       }
 
       /* ✅ SESSION IS ALREADY CREATED BY BACKEND */
-      login({
-        name: data.user.name,
-        email: data.user.email,
-        sessionId: data.sessionId,
-      });
+        if (mode === "signin") {
+          // Login ONLY on sign-in
+          login({
+              name: data.user.name,
+              email: data.user.email,
+              sessionId: data.sessionId,
+          });
+        } else {
+            // Signup success → switch to Sign In
+            setMode("signin");
+          }
 
     } catch (err: any) {
       setError(err.message || "Something went wrong");
