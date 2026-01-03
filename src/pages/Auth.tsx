@@ -126,13 +126,18 @@ export default function Auth() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cover bg-center"
+    <div className="min-h-screen px-4 sm:px-6 flex items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://assets.architecturaldigest.in/photos/62026064b5d9eefa7e4e2ddf/4:3/w_1439,h_1079,c_limit/How%20to%20furnish%20your%20home%20on%20a%20budget.jpg')",
       }}
     >
-      <div className="bg-white w-full max-w-3xl rounded-3xl shadow-2xl p-14">
+      <div className="
+          bg-white w-full
+          max-w-md sm:max-w-lg md:max-w-3xl
+         rounded-3xl shadow-2xl
+          p-6 sm:p-10 md:p-14
+          ">
         <h1 className="text-3xl font-serif text-center mb-1">DecorVista</h1>
         <p className="text-center text-gray-500 mb-6">
           Design your dream space
