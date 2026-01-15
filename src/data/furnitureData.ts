@@ -162,7 +162,7 @@ export const furnitureDatabase: FurnitureItem[] = [
     description: 'Multi-functional island with breakfast bar',
     price: 55000,
     image:
-      'https://images.unsplash.com/photo-1556912167-f556f1f39df1?auto=format&fit=crop&w=1080&q=80',
+      'https://www.bhg.com/thmb/IAWvT56PP6I3YYXtonUAWNupmbY=/1669x0/filters:no_upscale():strip_icc()/farmhouse-style-kitchen-island-7d12569a-85b15b41747441bb8ac9429cbac8bb6b.jpg',
     roomTypes: ['kitchen'],
     climateCompatible: ['tropical', 'dry', 'temperate'],
     minArea: 12,
@@ -204,7 +204,7 @@ export const furnitureDatabase: FurnitureItem[] = [
     description: 'Luxurious king-size bed with upholstered headboard',
     price: 58000,
     image:
-      'https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1080&q=80',
+      'https://m.media-amazon.com/images/I/611GrKNj8DL._AA360_AC_QL70_.jpg',
     roomTypes: ['bedroom'],
     climateCompatible: ['tropical', 'dry', 'temperate', 'cold'],
     minArea: 15,
@@ -230,7 +230,7 @@ export const furnitureDatabase: FurnitureItem[] = [
     description: 'Matching nightstands with drawers',
     price: 15000,
     image:
-      'https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1080&q=80',
+      'https://m.media-amazon.com/images/I/614XQyvQjQL._AC_UF894,1000_QL80_.jpg',
     roomTypes: ['bedroom'],
     climateCompatible: ['tropical', 'dry', 'temperate', 'cold'],
     minArea: 8,
