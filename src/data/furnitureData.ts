@@ -247,44 +247,79 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Wool Area Rug (6x9 ft)',
     description: 'Handwoven contemporary design rug',
     price: 12000,
-    image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1080&q=80',
-    category: 'accessory',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1080&q=80',
+    category: 'accessory'
   },
   {
     id: 'acc-2',
     name: 'Modern Table Lamp',
     description: 'Adjustable LED table lamp',
     price: 3500,
-    image:
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1080&q=80',
-    category: 'accessory',
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1080&q=80',
+    category: 'accessory'
   },
   {
     id: 'acc-3',
     name: 'Wall Art Set (3 pieces)',
     description: 'Abstract canvas prints with frames',
     price: 8500,
-    image:
-      'https://images.unsplash.com/photo-1624611943960-12d51727906f?auto=format&fit=crop&w=1080&q=80',
-    category: 'accessory',
+    image: 'https://images.unsplash.com/photo-1549887534-4b07c52cde35?w=1080&q=80',
+    category: 'accessory'
   },
   {
     id: 'acc-4',
     name: 'Indoor Plant Collection',
     description: 'Set of 3 air-purifying plants with pots',
     price: 4500,
-    image:
-      'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=1080&q=80',
-    category: 'accessory',
+    image: 'https://images.unsplash.com/photo-1598880940080-ff9a29891b85?w=1080&q=80',
+    category: 'accessory'
   },
   {
     id: 'acc-5',
+    name: 'Decorative Vase Set',
+    description: 'Ceramic vases in varying heights',
+    price: 3500,
+    image: 'https://images.unsplash.com/photo-1603204077779-bed963ea7d0e?w=1080&q=80',
+    category: 'accessory'
+  },
+  {
+    id: 'acc-6',
+    name: 'Floor Lamp',
+    description: 'Modern standing lamp with dimmer',
+    price: 6500,
+    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=1080&q=80',
+    category: 'accessory'
+  },
+  {
+    id: 'acc-7',
     name: 'Decorative Mirror',
     description: 'Large wall mirror with ornate frame',
     price: 9500,
-    image:
-      'https://images.unsplash.com/photo-1616627989394-6f4a3fa6c3b7?auto=format&fit=crop&w=1080&q=80',
-    category: 'accessory',
+    image: 'https://images.unsplash.com/photo-1616627561950-9f746e330187?w=1080&q=80',
+    category: 'accessory'
   },
+  {
+    id: 'acc-8',
+    name: 'Smart Home Hub',
+    description: 'Voice-controlled home automation system',
+    price: 15000,
+    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=1080&q=80',
+    category: 'accessory'
+  },
+  {
+    id: 'acc-9',
+    name: 'Bamboo Storage Baskets (Set of 3)',
+    description: 'Eco-friendly woven storage solution',
+    price: 4000,
+    image: 'https://images.unsplash.com/photo-1582582494700-1c1c9c1a4f3f?w=1080&q=80',
+    category: 'accessory'
+  },
+  {
+    id: 'acc-10',
+    name: 'Wall Clock',
+    description: 'Silent modern wall clock',
+    price: 2500,
+    image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=1080&q=80',
+    category: 'accessory'
+  }
 ];
