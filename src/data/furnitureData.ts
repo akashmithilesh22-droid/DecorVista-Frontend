@@ -247,7 +247,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Wool Area Rug (6x9 ft)',
     description: 'Handwoven contemporary design rug',
     price: 12000,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1080&q=80',
+    image: 'https://storables.com/wp-content/uploads/2021/12/Safavieh-Heritage-Collection-HG625A-Handmade-Traditional-Oriental-Premium-Wool-Area-Rug-1024x1024.jpg',
     category: 'accessory'
   },
   {
@@ -255,7 +255,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Modern Table Lamp',
     description: 'Adjustable LED table lamp',
     price: 3500,
-    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1080&q=80',
+    image: 'https://images.woodenstreet.de/image/cache/data/kp-lamps-store/silver-aluminium-sleek-table-lamp-with-off-white-lamp-shade/updated/updated-new/KPL-1-810x702.jpg',
     category: 'accessory'
   },
   {
@@ -263,7 +263,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Wall Art Set (3 pieces)',
     description: 'Abstract canvas prints with frames',
     price: 8500,
-    image: 'https://images.unsplash.com/photo-1549887534-4b07c52cde35?w=1080&q=80',
+    image: 'https://hansart.in/cdn/shop/files/1_53228785-58d8-4bac-ae06-913432276738.jpg?v=1724490641&width=1500',
     category: 'accessory'
   },
   {
@@ -295,7 +295,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Decorative Mirror',
     description: 'Large wall mirror with ornate frame',
     price: 9500,
-    image: 'https://images.unsplash.com/photo-1616627561950-9f746e330187?w=1080&q=80',
+    image: 'https://m.media-amazon.com/images/I/81PAHiqylqL._AC_UF894,1000_QL80_.jpg',
     category: 'accessory'
   },
   {
@@ -311,7 +311,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Bamboo Storage Baskets (Set of 3)',
     description: 'Eco-friendly woven storage solution',
     price: 4000,
-    image: 'https://images.unsplash.com/photo-1582582494700-1c1c9c1a4f3f?w=1080&q=80',
+    image: 'https://www.nicobar.com/cdn/shop/products/1518630607A46A7142_ea3907a7-1284-4616-973b-3aecb49cf199.jpg?v=1710310859',
     category: 'accessory'
   },
   {
@@ -319,7 +319,7 @@ export const complementaryItems: ComplementaryItem[] = [
     name: 'Wall Clock',
     description: 'Silent modern wall clock',
     price: 2500,
-    image: 'https://images.unsplash.com/photo-1503602642458-232111445657?w=1080&q=80',
+    image: 'https://m.media-amazon.com/images/I/513m5lfZ5cL._AC_UF894,1000_QL80_.jpg',
     category: 'accessory'
   }
 ];
